@@ -1,6 +1,6 @@
-# nlw-esports
+# NLW eSports - Trilha Ignite
 
-# Tecnologias utilizadas
+## Tecnologias utilizadas
 
 ## Web
 - React
