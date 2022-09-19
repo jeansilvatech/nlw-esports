@@ -1,16 +1,12 @@
-<<<<<<< HEAD
+
 import { useState, useEffect } from 'react';
 import './styles/main.css';
 import logo from'./assets/Logo-1.svg';
 import { GameBanner } from "./components/GameBanner";
 import { CreateAdBanner } from "./components/CreateAdBanner";
-=======
-import { GameBanner } from "./components/GameBanner";
-import { CreateAdBanner } from "./components/CreateAdBanner";
-import { useState, useEffect } from 'react';
 import './styles/main.css';
-import logo from'./assets/Logo-1.svg';
->>>>>>> 2043744 (Atualização do projeto)
+
+
 import * as Dialog from '@radix-ui/react-dialog';
 import { CreateAdModal } from './components/CreateAdModal';
 import axios from 'axios';
@@ -39,16 +35,10 @@ function App() {
   mode: "free",
   slides: {
     perView: 7,
-<<<<<<< HEAD
     origin: 'auto',
   },
 })
-=======
-    origin: 'auto'
-  },
-})
-
->>>>>>> 2043744 (Atualização do projeto)
+   
 return (
 <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20">
   <img src={logo} alt="" />
@@ -62,10 +52,7 @@ return (
         <GameBanner key={game.id}  bannerUrl={game.bannerUrl} title={game.title} adsCount={game._count.ads}/>
       )
     })}
-<<<<<<< HEAD
-    
-=======
->>>>>>> 2043744 (Atualização do projeto)
+
   </div>
   <Dialog.Root>
     <CreateAdBanner />
@@ -73,10 +60,7 @@ return (
   </Dialog.Root>
 </div>
 )
-<<<<<<< HEAD
-=======
 
->>>>>>> 2043744 (Atualização do projeto)
 }
 
 export default App
