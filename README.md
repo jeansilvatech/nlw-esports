@@ -1,4 +1,10 @@
+<div align="center">
+
 # NLW eSports - Trilha Ignite
+
+![nlw-exports](https://user-images.githubusercontent.com/23384348/191087594-488c6efd-8085-42e3-a0d5-60981d527d1e.svg)
+
+</div>
 
 ## Tecnologias utilizadas
 
