@@ -6,7 +6,7 @@
 
 </div>
 
-## Tecnologias utilizadas
+## Tecnologias e Ferramentas utilizadas
 
 ## Web
 - React
