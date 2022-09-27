@@ -72,9 +72,9 @@ return (
     {games.map(game=>{
       return(
         <GameBanner key={game.id}  bannerUrl={game.bannerUrl} title={game.title} adsCount={game._count.ads}/>
-        
       )
     })}
+    
  <button 
     className="absolute rounded-full p-2 text-white z-[1] right-2 top-1/2 
     -translate-y-1/2 bg-black/25 hover:bg-black/50 backdrop-blur disabled:opacity-0"
