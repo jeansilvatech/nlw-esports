@@ -39,25 +39,37 @@ function App() {
       slideChanged:(slider)=>{
         setCurrentSlide(slider.track.details.rel);
       },
+      loop:true,
       slides:{
         perView:6,
        spacing:15
-      }
+       
+      },
+      breakpoints: {
+        '(max-width:600px)': {
+          loop: true,
+          slides:{
+            perView:2,
+            spacing:10
+          }
+        },
+      },
     })
   )
  }, [])
-//  const [ref] = useKeenSlider<HTMLDivElement>({
-//   loop: false,
-//   mode: "free",
-//   slides: {
-//     perView: 7,
-//     origin: 'auto',
-//   },
-// }) 
+ const [ref] = useKeenSlider<HTMLDivElement>({
+  loop: false,
+  
+  mode: "free",
+  slides: {
+    perView: 7,
+    origin: 'auto',
+  },
+}) 
 return (
 <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20">
   <img src={logo} alt="" />
-  <h1 className="text-6xl text-white font-black mt-20">Seu <span
+  <h1 className="text-6xl text-white font-black mt-20 text-center">Seu <span
       className='bg-gradient text-transparent bg-clip-text'>duo</span> está aqui.</h1>
 
 
